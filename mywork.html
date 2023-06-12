@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Directed by Ahmed Tamer Gamal-->
+    
+</head>
+<body>
+    <input type="number" id="myInput">
+    <div id="result"></div>
+    <script>
+            var x = document.getElementById("myInput")
+            var result = document.getElementById("result")
+            x.addEventListener('input', function() {
+            var userInput = x.value;
+            if(userInput >= 50){
+                result.textContent = userInput * 2;
+            }
+            else if(userInput < 50){
+                result.textContent = userInput;
+            }
+            });
+    </script>
+</body>
+</html>
